@@ -127,7 +127,9 @@
     #define SHADOW_TEX_SIZE      2048
 #endif
 
-extern void osToggleVR(bool enable);
+// Temporary resolution for all platform linking
+// extern void osToggleVR(bool enable);
+void osToggleVR(bool enable){}
 
 extern void* osMutexInit     ();
 extern void  osMutexFree     (void *obj);
